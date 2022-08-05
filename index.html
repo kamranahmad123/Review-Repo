@@ -8,6 +8,7 @@
      justify-content: space-around;
            
     } 
+    
     @media only screen and (max-width: 600px) {
     body 
     {
@@ -26,14 +27,15 @@
   <body style="height: 200vh;">
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <script  src="js/index.js"></script>
-    <header id = "header" style="margin-bottom: 70px;">
-    <nav id="nav-bar" style = "position: fixed;">
-      <a href="#features" class="nav-link">features</a>
-      <a href="#how-it-works" class="nav-link">How it works</a>
-      <a href="#pricing" class="nav-link">Pricing</a>
+    <header id = "header" >
+    <nav id="nav-bar" style = "position: fixed; right: 0%;">
+      <a href="#features" class="nav-link" style="margin: 30px;">features</a>
+      <a href="#how-it-works" class="nav-link" style="margin: 30px";>How it works</a>
+      <a href="#pricing" class="nav-link" style="margin: 30px";>Pricing</a>
     </nav>
-           <img id = "header-img" alt = "" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQst1gUM4xPlwcBF0V95TTq7vq7q20f7LWnPexSFLM&s">
-            <form id="form" action="https://www.freecodecamp.com/email-submit" style="margin-top: 50px;">
+           <img id ="header-img" alt = "" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png" style="width:250px;height:75px;">
+
+      <form id="form" action="https://www.freecodecamp.com/email-submit" style="margin-top: 50px;">
         <input id="email" name="email" type="email" placeholder="Enter your email address">
         <br>
         <input id="submit" type="submit" name="Get started" style="margin-top: 30px;" value="Get Started"/>
