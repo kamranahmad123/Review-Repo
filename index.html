@@ -1,6 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <style>
+          .felx-container
+    {
+     display : flex;
+     justify-content: space-around;
+           
+    } 
+    @media only screen and (max-width: 600px) {
+    body 
+    {
+    background-color: lightblue; 
+    }
+   
+  }
+
+    </style>
+    
     <meta charset="UTF-8">
     <title>Fork Me! FCC: Test Suite Template</title>
     <link rel="stylesheet" href="css/style.css">
@@ -9,20 +26,68 @@
   <body style="height: 200vh;">
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <script  src="js/index.js"></script>
-    <br><br>
     <header id = "header" style="margin-bottom: 70px;">
-      <img id = "header-img" alt = "" src = ""/>
-      <nav id="nav-bar" style = "position: fixed;">
-        <a href="https://product-landing-page.freecodecamp.rocks/#features" class="nav-link">features</a>
-        <a href="https://product-landing-page.freecodecamp.rocks/#how-it-works" class="nav-link">How it works</a>
-        <a href="https://product-landing-page.freecodecamp.rocks/#pricing" class="nav-link">Pricing</a>
-      </nav>
-      <form id="form" action="https://www.freecodecamp.com/email-submit" style="margin-top: 50px;">
-        <input id="email" type="email" placeholder="Enter your email address">
+    <nav id="nav-bar" style = "position: fixed;">
+      <a href="#features" class="nav-link">features</a>
+      <a href="#how-it-works" class="nav-link">How it works</a>
+      <a href="#pricing" class="nav-link">Pricing</a>
+    </nav>
+           <img id = "header-img" alt = "" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQst1gUM4xPlwcBF0V95TTq7vq7q20f7LWnPexSFLM&s">
+            <form id="form" action="https://www.freecodecamp.com/email-submit" style="margin-top: 50px;">
+        <input id="email" name="email" type="email" placeholder="Enter your email address">
         <br>
         <input id="submit" type="submit" name="Get started" style="margin-top: 30px;" value="Get Started"/>
       </form>
-      <iframe src="https://youtu.be/y8Yv4pnO7qc" id="video" style="margin-top: 50px;"></iframe>
-          </header>
+     <div id="features">      
+      <div>
+      <h3>Premium Materials</h3>
+      <p2>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p2>  
+    </div>
+    <div >
+      <h3>
+        Fast Shipping</h3>
+      <p2>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p2>  
+    </div>
+    <div >
+      <h3> Quality Assurance</h3>
+      <p2>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p2>  
+    </div>
+  </div>
+  <div id="how-it-works">
+  <iframe src="https://youtu.be/y8Yv4pnO7qc" id="video" style="margin-top: 50px;"></iframe>
+</div>
+  <div class="felx-container" id="pricing">
+      <div>
+      <h4>TENOR TROMBONE</h4>
+      <h2>$600</h2>
+       <ul>
+        <li>Lorem ipsum.</li>
+        <li>Lorem ipsum.</li>
+        <li>Lorem ipsum dolor.</li>
+        <li>Lorem ipsum.</li>
+      </ul>
+      </div>
+      <div>
+        <h4>BASS TROMBONE</h4>
+        <h2>$900</h2>
+         <ul>
+          <li>Lorem ipsum.</li>
+          <li>Lorem ipsum.</li>
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum.</li>
+        </ul>
+        </div>
+        <div>
+          <h4>VALVE TROMBONE</h4>
+          <h2>$1200</h2>
+           <ul>
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum dolor.</li>
+            <li>Lorem ipsum.</li>
+          </ul>
+          </div>
+        </div>     
+    </header>
   </body>
 </html>
